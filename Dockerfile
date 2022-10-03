@@ -1,5 +1,9 @@
 FROM node:6
 
+RUN npm install n -g
+
+RUN n stable
+
 RUN mkdir -p /usr/share/nginx/html
 
 COPY . /usr/share/nginx/html/
