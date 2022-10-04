@@ -1,8 +1,4 @@
-FROM node:6
-
-RUN npm install n -g
-
-RUN n stable
+FROM node:18
 
 RUN mkdir -p /usr/share/nginx/html
 
